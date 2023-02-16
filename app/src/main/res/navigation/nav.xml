@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav">
+    app:startDestination="@id/index_screen">
+
+    <fragment
+        android:id="@+id/index_screen"
+        android:name="com.weiran.navigation.ui.fragment.Index">
+        <action
+            android:id="@+id/action_title_screen_to_register"
+            app:destination="@id/register" />
+    </fragment>
+
+      <fragment
+          android:id="@+id/register"
+          android:name="com.weiran.navigation.ui.fragment.Register">
+          <action
+              android:id="@+id/action_register_to_match"
+              app:destination="@+id/match"/>
+      </fragment>
+
+    <fragment
+        android:id="@+id/match"
+        android:name="com.weiran.navigation.ui.fragment.Match">
+    </fragment>
+
 
 </navigation>
