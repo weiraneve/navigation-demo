@@ -1,7 +1,8 @@
 package com.weiran.navigation.ui.compose.page
 
-import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
@@ -15,8 +16,7 @@ import com.weiran.navigation.ui.compose.viewmodel.SavedViewModel
 
 @Composable
 fun SavedScreen(navController: NavController) {
-    Column {
-        Text(text = "Saved")
+    Box(modifier = Modifier.fillMaxSize()) {
         Spacer(modifier = Modifier.height(100.dp))
         val viewModel: SavedViewModel = viewModel()
         Button(onClick = { viewModel::dispatch.invoke(SavedAction.UpdateUI(navController)) }) { Text("跳转 saveAny界面") }
