@@ -8,7 +8,7 @@ import com.weiran.navigation.ui.compose.Home
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        startXmlNavigationUi()
+//        startXmlNavigationUi()
         startComposeNavigationUi()
     }
 

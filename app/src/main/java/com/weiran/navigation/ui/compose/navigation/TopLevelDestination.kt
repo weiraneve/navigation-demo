@@ -17,7 +17,7 @@ enum class TopLevelDestination(
         unselectedIcon = R.drawable.ic_bookmarks_border,
         iconTextId = R.string.saved
     ),
-    INTERESTS(
+    INTEREST(
         selectedIcon = R.drawable.ic_menu_book,
         unselectedIcon = R.drawable.ic_menu_book_border,
         iconTextId = R.string.interests

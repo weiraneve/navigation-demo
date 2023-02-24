@@ -35,12 +35,12 @@ fun navigateToTopLevelDestination(topLevelDestination: TopLevelDestination, navC
         when (topLevelDestination) {
             TopLevelDestination.FOR_YOU -> navController.navigate(fouYouRoute, topLevelNavOptions)
             TopLevelDestination.SAVED -> navController.navigate(savedRoute, topLevelNavOptions)
-            TopLevelDestination.INTERESTS -> navController.navigate(interestRoute, topLevelNavOptions)
+            TopLevelDestination.INTEREST -> navController.navigate(interestRoute, topLevelNavOptions)
         }
     }
 }
 
-const val fouYouRoute = "forYou_route"
+const val fouYouRoute = "for_you_route"
 const val savedRoute = "saved_route"
 const val savedAnyRoute = "saved_route/any"
 const val interestRoute = "interest_route"
