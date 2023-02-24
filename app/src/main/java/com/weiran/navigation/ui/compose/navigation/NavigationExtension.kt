@@ -5,7 +5,6 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.navOptions
-import androidx.tracing.trace
 import com.google.accompanist.navigation.animation.composable
 import com.weiran.navigation.ui.compose.page.ForYouScreen
 import com.weiran.navigation.ui.compose.page.InterestScreen
@@ -33,29 +32,27 @@ fun navigateToTopLevelDestination(
     topLevelDestination: TopLevelDestination,
     navController: NavController
 ) {
-    trace("Navigation: ${topLevelDestination.name}") {
-        val topLevelNavOptions = navOptions {
-            popUpTo(navController.graph.findStartDestination().id) { saveState = true }
-            launchSingleTop = true
-            restoreState = true
-        }
+    val topLevelNavOptions = navOptions {
+        popUpTo(navController.graph.findStartDestination().id) { saveState = true }
+        launchSingleTop = true
+        restoreState = true
+    }
 
-        when (topLevelDestination) {
-            TopLevelDestination.FOR_YOU -> navController.navigate(
-                fouYouRoute,
-                topLevelNavOptions
-            )
+    when (topLevelDestination) {
+        TopLevelDestination.FOR_YOU -> navController.navigate(
+            fouYouRoute,
+            topLevelNavOptions
+        )
 
-            TopLevelDestination.SAVED -> navController.navigate(
-                savedRoute,
-                topLevelNavOptions
-            )
+        TopLevelDestination.SAVED -> navController.navigate(
+            savedRoute,
+            topLevelNavOptions
+        )
 
-            TopLevelDestination.INTEREST -> navController.navigate(
-                interestRoute,
-                topLevelNavOptions
-            )
-        }
+        TopLevelDestination.INTEREST -> navController.navigate(
+            interestRoute,
+            topLevelNavOptions
+        )
     }
 }
 

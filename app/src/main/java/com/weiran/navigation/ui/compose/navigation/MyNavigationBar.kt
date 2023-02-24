@@ -1,6 +1,5 @@
 package com.weiran.navigation.ui.compose.navigation
 
-import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -24,7 +23,7 @@ fun MyNavigationBar(
     NavigationBar(modifier = modifier) {
         destinations.forEach { destination ->
             val selected = currentDestination.isTopLevelDestinationInHierarchy(destination)
-            MyNavigationBarItem(
+            NavigationBarItem(
                 selected = selected,
                 onClick = { onNavigateToDestination(destination, navController) },
                 icon = {
@@ -42,28 +41,6 @@ fun MyNavigationBar(
             )
         }
     }
-}
-
-@Composable
-fun RowScope.MyNavigationBarItem(
-    selected: Boolean,
-    onClick: () -> Unit,
-    icon: @Composable () -> Unit,
-    modifier: Modifier = Modifier,
-    selectedIcon: @Composable () -> Unit = icon,
-    enabled: Boolean = true,
-    label: @Composable (() -> Unit)? = null,
-    alwaysShowLabel: Boolean = true
-) {
-    NavigationBarItem(
-        selected = selected,
-        onClick = onClick,
-        icon = if (selected) selectedIcon else icon,
-        modifier = modifier,
-        enabled = enabled,
-        label = label,
-        alwaysShowLabel = alwaysShowLabel
-    )
 }
 
 private fun NavDestination?.isTopLevelDestinationInHierarchy(destination: TopLevelDestination) =
