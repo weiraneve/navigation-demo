@@ -9,15 +9,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.navigation.NavController
 import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hierarchy
-import androidx.navigation.NavHostController
 
 @Composable
 fun MyNavigationBar(
     destinations: List<TopLevelDestination>,
-    navController: NavHostController,
-    onNavigateToDestination: (TopLevelDestination, NavHostController) -> Unit,
+    navController: NavController,
+    onNavigateToDestination: (TopLevelDestination, NavController) -> Unit,
     currentDestination: NavDestination?,
     modifier: Modifier = Modifier
 ) {

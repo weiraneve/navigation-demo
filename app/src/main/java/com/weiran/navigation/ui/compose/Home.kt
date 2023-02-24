@@ -32,8 +32,8 @@ fun Home() {
         MyNavigationBar(
             destinations = topLevelDestinations,
             navController = navController,
-            onNavigateToDestination = { destinations, navHostController ->
-                navigateToTopLevelDestination(destinations, navHostController)
+            onNavigateToDestination = { destinations, NavController ->
+                navigateToTopLevelDestination(destinations, NavController)
             },
             currentDestination = currentDestination
         )
