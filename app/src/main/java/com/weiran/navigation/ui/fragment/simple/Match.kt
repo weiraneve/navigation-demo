@@ -1,4 +1,4 @@
-package com.weiran.navigation.ui.fragment
+package com.weiran.navigation.ui.fragment.simple
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -4,15 +4,24 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.weiran.navigation.MainActivity">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/my_nav_host_fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/nav"/>
+        android:layout_marginTop="@dimen/dimen_64"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_48"
+            android:layout_marginEnd="@dimen/dimen_48"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
 
 </FrameLayout>

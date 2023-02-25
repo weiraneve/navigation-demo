@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
-    tools:context="com.weiran.navigation.ui.fragment.Register"
+    tools:context="com.weiran.navigation.ui.fragment.simple.Register"
     tools:layout_editor_absoluteY="81dp">
 
     <Button
