@@ -9,7 +9,7 @@
 
     <fragment
             android:id="@+id/leaderboard"
-            android:name="com.weiran.navigation.ui.fragment.simple_bottom_nav.listscreen.Leaderboard"
+            android:name="com.weiran.navigation.ui.fragment.simple_bottom_nav.listscreen.ListBoard"
             android:label="@string/title_list"
             tools:layout="@layout/fragment_simple_nav_leaderboard">
     </fragment>

@@ -7,10 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.weiran.navigation.R
 
-/**
- * Shows a static leaderboard with multiple users.
- */
-class Leaderboard : Fragment() {
+class ListBoard : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
