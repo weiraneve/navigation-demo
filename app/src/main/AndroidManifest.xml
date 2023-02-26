@@ -23,7 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.fragment.HomeActivity" />
+        <activity android:name=".ui.fragment.simple.SimpleNavActivity" />
+        <activity android:name=".ui.fragment.simple_bottom_nav.SimpleBottomNavActivity" />
     </application>
 
 </manifest>

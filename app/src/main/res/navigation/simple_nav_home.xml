@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    app:startDestination="@+id/titleScreen">
+
+    <fragment
+        android:id="@+id/titleScreen"
+        android:name="com.weiran.navigation.ui.fragment.simple_bottom_nav.homescreen.Title"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_simple_nav_title">
+        <action
+            android:id="@+id/action_title_to_about"
+            app:destination="@id/aboutScreen"/>
+    </fragment>
+    <fragment
+        android:id="@+id/aboutScreen"
+        android:name="com.weiran.navigation.ui.fragment.simple_bottom_nav.homescreen.About"
+        android:label="@string/title_about"
+        tools:layout="@layout/fragment_simple_nav_about"/>
+</navigation>

@@ -8,7 +8,8 @@ import android.widget.LinearLayout
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import com.weiran.navigation.ui.compose.Home
-import com.weiran.navigation.ui.fragment.HomeActivity
+import com.weiran.navigation.ui.fragment.simple.SimpleNavActivity
+import com.weiran.navigation.ui.fragment.simple_bottom_nav.SimpleBottomNavActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,7 +29,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun startXmlNavigationUi() {
         setContentView(R.layout.activity_main)
-        generateButtonAndUI(R.string.home, HomeActivity::class.java)
+        generateButtonAndUI(R.string.home_simple_nav, SimpleNavActivity::class.java)
+        generateButtonAndUI(R.string.home_simple_bottom_nav, SimpleBottomNavActivity::class.java)
     }
 
     private fun <T : AppCompatActivity> generateButtonAndUI(layoutInt: Int, java: Class<T>) {

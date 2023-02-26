@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/form"
+    app:startDestination="@id/register">
+
+    <fragment
+            android:id="@+id/register"
+            android:name="com.weiran.navigation.ui.fragment.simple_bottom_nav.formscreen.Register"
+            android:label="@string/title_register"
+            tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_register_to_registered"
+            app:destination="@id/registered"/>
+    </fragment>
+    <fragment
+        android:id="@+id/registered"
+        android:name="com.weiran.navigation.ui.fragment.simple_bottom_nav.formscreen.Registered"
+        android:label="Registered"
+        tools:layout="@layout/fragment_simple_nav_registered"/>
+</navigation>

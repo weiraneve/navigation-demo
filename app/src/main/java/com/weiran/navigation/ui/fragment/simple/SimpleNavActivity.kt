@@ -1,10 +1,10 @@
-package com.weiran.navigation.ui.fragment
+package com.weiran.navigation.ui.fragment.simple
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.weiran.navigation.R
 
-class HomeActivity: AppCompatActivity() {
+class SimpleNavActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
