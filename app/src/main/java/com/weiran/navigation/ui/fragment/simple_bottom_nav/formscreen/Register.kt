@@ -16,7 +16,7 @@ class Register : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_simple_nav_register, container, false)
 
-        view.findViewById<Button>(R.id.signup_btn).setOnClickListener {
+        view.findViewById<Button>(R.id.simple_nav_signup_btn).setOnClickListener {
             findNavController().navigate(R.id.action_register_to_registered)
         }
         return view

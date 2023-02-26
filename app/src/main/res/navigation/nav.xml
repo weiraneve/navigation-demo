@@ -8,11 +8,11 @@
         android:name="com.weiran.navigation.ui.fragment.simple.Index">
         <action
             android:id="@+id/action_title_screen_to_register"
-            app:destination="@id/register" />
+            app:destination="@id/simple_register" />
     </fragment>
 
       <fragment
-          android:id="@+id/register"
+          android:id="@+id/simple_register"
           android:name="com.weiran.navigation.ui.fragment.simple.Register">
           <action
               android:id="@+id/action_register_to_match"
