@@ -11,8 +11,8 @@ import androidx.compose.ui.Modifier
 fun ForYouScreen() {
     Box(modifier = Modifier.fillMaxSize()) {
         Text("ForYou")
-        LazyColumn {
-            (0..20).forEach {
+        LazyColumn(modifier = Modifier.fillMaxSize()) {
+            (0..100).forEach {
                 item { 
                     Text(text = it.toString())
                 }
