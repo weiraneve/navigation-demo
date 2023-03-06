@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun startXmlNavigationUi() {
         setContentView(R.layout.activity_main)
-        generateButtonAndUI(R.string.home_simple_nav, SimpleNavActivity::class.java)
+        generateButtonAndUI(R.string.one_page_simple, SimpleNavActivity::class.java)
         generateButtonAndUI(R.string.home_simple_bottom_nav, SimpleBottomNavActivity::class.java)
         generateButtonAndUI(R.string.compose_nav, ComposeNavActivity::class.java)
     }
