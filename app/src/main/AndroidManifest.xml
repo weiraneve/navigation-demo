@@ -25,6 +25,7 @@
         </activity>
         <activity android:name=".ui.fragment.simple.SimpleNavActivity" />
         <activity android:name=".ui.fragment.simple_bottom_nav.SimpleBottomNavActivity" />
+        <activity android:name=".ui.compose.ComposeNavActivity" />
     </application>
 
 </manifest>

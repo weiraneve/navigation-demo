@@ -35,4 +35,5 @@
     <string name="losses">Losses</string>
     <string name="losses_amount">03</string>
     <string name="welcome">Welcome!</string>
+    <string name="compose_nav">compose_nav</string>
 </resources>

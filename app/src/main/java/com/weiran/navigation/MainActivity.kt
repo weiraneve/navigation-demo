@@ -5,9 +5,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
-import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import com.weiran.navigation.ui.compose.Home
+import com.weiran.navigation.ui.compose.ComposeNavActivity
 import com.weiran.navigation.ui.fragment.simple.SimpleNavActivity
 import com.weiran.navigation.ui.fragment.simple_bottom_nav.SimpleBottomNavActivity
 
@@ -18,19 +17,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         startXmlNavigationUi()
-//        startComposeNavigationUi()
-    }
-
-    private fun startComposeNavigationUi() {
-        setContent {
-            Home()
-        }
     }
 
     private fun startXmlNavigationUi() {
         setContentView(R.layout.activity_main)
         generateButtonAndUI(R.string.home_simple_nav, SimpleNavActivity::class.java)
         generateButtonAndUI(R.string.home_simple_bottom_nav, SimpleBottomNavActivity::class.java)
+        generateButtonAndUI(R.string.compose_nav, ComposeNavActivity::class.java)
     }
 
     private fun <T : AppCompatActivity> generateButtonAndUI(layoutInt: Int, java: Class<T>) {
