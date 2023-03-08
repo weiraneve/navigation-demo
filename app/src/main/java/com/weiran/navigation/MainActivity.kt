@@ -16,11 +16,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
         startXmlNavigationUi()
     }
 
     private fun startXmlNavigationUi() {
-        setContentView(R.layout.activity_main)
         generateButtonAndUI(R.string.one_page_simple, SimpleNavActivity::class.java)
         generateButtonAndUI(R.string.home_simple_bottom_nav, SimpleBottomNavActivity::class.java)
         generateButtonAndUI(R.string.compose_nav, ComposeNavActivity::class.java)
